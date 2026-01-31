@@ -1,0 +1,109 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FULL SCREEN CENTER */
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;   /* 🔥 NO SCROLLBAR */
+  font-family: Arial, sans-serif;
+  background: #eaf6f8;
+}
+
+/* AUTH LAYOUT */
+.auth-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;     /* vertical center */
+  justify-content: center; /* horizontal center */
+}
+
+/* CARD */
+.auth-card {
+  width: 420px;
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* TEXT */
+.app-title {
+  text-align: center;
+  color: #0f6d7a;
+  margin-bottom: 10px;
+}
+
+.welcome {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* BUTTONS */
+.primary-btn {
+  background: #1f7a8c;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.primary-btn:hover {
+  background: #166170;
+}
+
+.outline-btn {
+  margin-top: 10px;
+  background: white;
+  border: 2px solid #1f7a8c;
+  color: #1f7a8c;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.link-text {
+  text-align: center;
+  margin-top: 15px;
+  color: #1f7a8c;
+  cursor: pointer;
+}
+.primary-btn.outline {
+  background: white;
+  color: #1f7a8c;
+  border: 2px solid #1f7a8c;
+  margin-top: 10px;
+}
+

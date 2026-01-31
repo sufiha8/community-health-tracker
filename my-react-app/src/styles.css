@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #eaf6f9;
+}
+
+.auth-wrapper {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.auth-card {
+  width: 380px;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.app-title {
+  text-align: center;
+  color: #1f7a8c;
+  margin-bottom: 10px;
+}
+
+.welcome {
+  text-align: center;
+  margin: 0;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+  margin-top: 12px;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+input:focus {
+  border-color: #1f7a8c;
+}
+
+.primary-btn {
+  width: 100%;
+  padding: 12px;
+  background: #1f7a8c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: 18px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.outline-btn {
+  width: 100%;
+  padding: 12px;
+  background: white;
+  color: #1f7a8c;
+  border: 2px solid #1f7a8c;
+  border-radius: 8px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.link-text {
+  text-align: center;
+  margin-top: 16px;
+  color: #1f7a8c;
+  cursor: pointer;
+  font-size: 14px;
+}
