@@ -1,0 +1,114 @@
+.admin-page {
+  display: flex;
+  height: 100vh;
+}
+.admin-sidebar {
+  width: 220px;
+  padding: 16px;
+  border-right: 1px solid #eee;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  overflow: auto;
+  background: white; /* plain background */
+  color: #333;
+  z-index: 100;
+}
+.admin-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.admin-sidebar li {
+  padding: 8px 4px;
+  cursor: pointer;
+  color: #333;
+}
+.admin-sidebar li.active {
+  font-weight: bold;
+  background: #028090; /* same as header color */
+  color: #fff;
+}
+.admin-main {
+  flex: 1;
+  padding: 16px;
+  margin-left: 220px; /* accommodate fixed sidebar */
+  overflow: auto;
+  height: 100vh;
+  background: #f0f4f8;
+}
+.announcement-card {
+  border: 1px solid #eee;
+  padding: 12px;
+  margin-bottom: 8px;
+}
+
+/* Topbar */
+.admin-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 12px;
+  background: #028090;
+  color: #fff;
+}
+.admin-topbar .topbar-right button.logout-btn {
+  background: #ef4444;
+}
+.admin-topbar .topbar-right {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.logout-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.logout-btn:hover {
+  opacity: 0.95;
+}
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+
+/* avatar popover */
+.avatar-card {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  color: #333;
+  min-width: 120px;
+}
+
+/* ensure avatar card text is dark regardless of context */
+.avatar-card,
+.avatar-card * {
+  color: #333 !important;
+}
+
+/* override header text color inheritance */
+.admin-topbar .avatar-card,
+.topbar .avatar-card {
+  color: #333;
+}
